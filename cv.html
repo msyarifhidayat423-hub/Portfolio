@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Muhammad Syarif Hidayat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --dark-bg: #1a1d23;
+            --gold-accent: #c5a059;
+            --light-gray: #f4f4f4;
+        }
+
+        
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #e9ecef;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 70px;
+        }
+
+        .navbar {
+            background-color: var(--dark-bg);
+            border-bottom: 3px solid var(--gold-accent);
+        }
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        .nav-link:hover {
+            color: var(--gold-accent) !important;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .sidebar {
+            background-color: var(--dark-bg);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .profile-img-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 30px;
+            border: 5px solid red;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar-title {
+            background-color: var(--gold-accent);
+            color: var(--dark-bg);
+            text-align: center;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 20px;
+            margin: 25px 0 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+        }
+
+        .info-item label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        .name-header {
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #333;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .section-header {
+            background-color: var(--gold-accent);
+            padding: 5px 15px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .content-text {
+            font-size: 0.9rem;
+            color: #444;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .edu-item, .exp-item {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .year-text {
+            color: #2c7a7b;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        ul.skill-list {
+            padding-left: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* --- STYLING CARD (BERITA & PRESTASI) --- */
+        .news-section, .achievement-section {
+            padding: 20px 40px 40px;
+            background-color: #fff;
+        }
+
+        .card-custom {
+            border: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            height: 100%;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-custom img {
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .card-custom .card-title {
+            font-size: 1rem;
+            font-weight: bold;
+            color: var(--dark-bg);
+            margin-bottom: 5px;
+        }
+
+        .card-custom .card-text {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .achievement-icon {
+            color: var(--gold-accent);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .year-text { text-align: left; margin-top: 5px; }
+            .news-section, .achievement-section { padding: 20px; }
+        }
+    </style>
+</head>
+<body id="home">
+<div class="container cv-container">
+    <div class="row g-0">
+        <div class="col-md-4 sidebar" id="sosmed">
+            <div class="profile-img-container">
+                <img src="foto1.jpg" alt="Muhammad Syarif Hidayat">
+                
+            </div>
+
+            <div class="sidebar-title">Data Diri</div>
+            <div class="info-item"><label>Tempat / Tanggal Lahir</label><span>Sidoarjo, 01 Maret 2004</span></div>
+            <div class="info-item"><label>Jenis Kelamin</label><span>Laki-Laki</span></div>
+            <div class="info-item"><label>Status</label><span>Belum Menikah</span></div>
+            <div class="info-item"><label>Kewarganegaraan</label><span>Indonesia</span></div>
+
+            <div class="sidebar-title">Kontak</div>
+            <a href="https://wa.me/62895801035713" target="_blank" class="contact-link"><i class="fab fa-whatsapp me-2"></i> +62 895801035713</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Ds.+Wilayut+16/04+Sukodono,+Sidoarjo" target="_blank" class="contact-link">
+                <i class="fas fa-map-marker-alt me-2"></i> Ds. Wilayut 16/04 Sukodono, Sidoarjo</a>
+            
+            <div class="sidebar-title">Sosial Media</div>
+            <a href="mailto:msyarifhidayat423@gmail.com" class="contact-link"><i class="fas fa-envelope me-2"></i> msyarifhidayat423@gmail.com</a>
+            <a href="https://www.tiktok.com/@panggilajasayrif" target="_blank" class="contact-link"><i class="fab fa-tiktok me-2"></i> @panggilajasayrif</a>
+            <a href="https://www.instagram.com/syarlf9_86" target="_blank" class="contact-link"><i class="fab fa-instagram me-2"></i> @syarlf9_86</a>
+            <a href="https://github.com/msyarifhidayat423-hub" target="_blank" class="contact-link"><i class="fab fa-github me-2"></i> msyarifhidayat423-hub</a>
+        </div>
+
+        <div class="col-md-8 main-content">
+            <div id="profile">
+                <h1 class="name-header">MUHAMMAD<br>SYARIF HIDAYAT</h1>
+                <div class="section-header">Tentang Saya</div>
+                <p class="content-text">
+                    Saya seorang ahli dibidang Jaringan Komputer dan informatika. Saya juga aktif dalam berorganisasi di lingkungan kampus maupun di masyarakat luas. Sehingga saya sudah terbiasa dengan banyak tekanan dan selalu On-Time dalam setiap kegiatan.
+                </p>
+            </div>
+
+            <div id="pendidikan">
+                <div class="section-header">Pendidikan</div>
+                <div class="row edu-item">
+                    <div class="col-md-8"><strong>Universitas Maarif Hasyim Latief</strong><br>S1 Teknik Informatika</div>
+                    <div class="col-md-4 year-text">2023 - Sekarang</div>
+                </div>
+                <div class="row edu-item">
+                    <div class="col-md-8"><strong>SMK YPM 1 TAMAN</strong><br>Teknik Komputer dan Jaringan</div>
+                    <div class="col-md-4 year-text">2019 - 2022</div>
+                </div>
+            </div>
+
+            <div id="pengalaman">
+                <div class="section-header">Pengalaman Kerja</div>
+                <div class="exp-item">
+                    <strong>Cv. Media Mitra Group ( Magang )</strong>
+                    <ul class="content-text mt-1">
+                        <li>Perbaikan pada perangkat PC, Laptop, Printer, CCTV, Dll.</li>
+                        <li>Membuat jaringan Local Area Network Untuk Lab Komputer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="organisasi">
+                <div class="section-header">Pengalaman Organisasi</div>
+                <div class="exp-item">
+                    <strong>PAC IPNU Kec. Sukodono</strong>
+                    <ul class="content-text mt-1">
+                        <li>Wakil Sekertaris 4 (2023 - 2025)</li>
+                        <li>Wakil Ketua 3 (2025 - 2027) </li>
+                    </ul>
+                    <strong>KARANG TARUNA DS. WILAYUT</strong>
+                    <ul class="content-text mt-1">
+                        <li>Wakil Ketua (2023 - 2025)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-header">Kemampuan</div>
+            <div class="row">
+                <div class="col-6">
+                    <ul class="skill-list">
+                        <li>Problem-solving</li>
+                        <li>Public Speaking</li>
+                        <li>Programming .cpp .py .html</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul class="skill-list">
+                        <li>Jaringan Komputer</li>
+                        <li>Hardware Engineering</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="berita" class="news-section">
+        <div class="section-header">Berita & Dokumentasi Kegiatan</div>
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom">
+                    <img src="https://via.placeholder.com/300x200?text=Porseni+Pelajar" class="card-img-top" alt="Porseni">
+                    <div class="card-body">
+                        <h5 class="card-title">Porseni Pelajar</h5>
+                        <p class="card-text">Penyelenggaraan event olahraga dan seni tingkat pelajar se-Kecamatan Sukodono.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom">
+                    <img src="https://via.placeholder.com/300x200?text=Pijar+Ramadhan" class="card-img-top" alt="Pijar Ramadhan">
+                    <div class="card-body">
+                        <h5 class="card-title">Pijar Ramadhan 2026</h5>
+                        <p class="card-text">Kegiatan edukasi dan pesantren kilat yang diikuti oleh 15 sekolah MI se-Sukodono.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom">
+                    <img src="https://via.placeholder.com/300x200?text=Maintenance+Server" class="card-img-top" alt="Server">
+                    <div class="card-body">
+                        <h5 class="card-title">Maintenance Server</h5>
+                        <p class="card-text">Optimasi jaringan lokal dan pemeliharaan rutin server untuk laboratorium komputer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom">
+                    <img src="https://via.placeholder.com/300x200?text=Workshop+IT" class="card-img-top" alt="Workshop">
+                    <div class="card-body">
+                        <h5 class="card-title">Workshop Hardware</h5>
+                        <p class="card-text">Pelatihan troubleshooting hardware PC dan printer bagi anggota organisasi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom">
+                    <img src="https://via.placeholder.com/300x200?text=Instalasi+CCTV" class="card-img-top" alt="CCTV">
+                    <div class="card-body">
+                        <h5 class="card-title">Instalasi CCTV</h5>
+                        <p class="card-text">Dokumentasi pemasangan sistem keamanan CCTV di berbagai titik strategis desa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom">
+                    <img src="https://via.placeholder.com/300x200?text=Bakhti+Sosial" class="card-img-top" alt="Baksos">
+                    <div class="card-body">
+                        <h5 class="card-title">Bakti Sosial</h5>
+                        <p class="card-text">Kegiatan santunan dan bantuan sosial bersama rekan-rekan pengurus PAC IPNU.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="prestasi" class="achievement-section border-top">
+        <div class="section-header">Prestasi & Penghargaan</div>
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom text-center p-3">
+                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Juara 1 Lomba Networking</h5>
+                        <p class="card-text small">Tingkat Kabupaten - SMK Competency 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom text-center p-3">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Peringkat 3 Troubleshooting PC</h5>
+                        <p class="card-text small">LKS Wilker Surabaya - 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom text-center p-3">
+                    <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Sertifikasi Junior Web Dev</h5>
+                        <p class="card-text small">BNSP - Kompetensi Keahlian 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom text-center p-3">
+                    <div class="achievement-icon"><i class="fas fa-star"></i></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Pengurus Teraktif</h5>
+                        <p class="card-text small">Penghargaan Internal PAC IPNU - 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom text-center p-3">
+                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Best Leader Workshop</h5>
+                        <p class="card-text small">Leadership Camp - Universitas Maarif 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-custom text-center p-3">
+                    <div class="achievement-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Lulusan Terbaik SMK</h5>
+                        <p class="card-text small">Kategori Teknik Komputer Jaringan - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<center><a class="btn btn-primary" href="index.html" role="button">Beranda</a></center>
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2026 Muhammad Syarif Hidayat. Built with Bootstrap.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+
+
+
+</script>
+</body>
+</html>
